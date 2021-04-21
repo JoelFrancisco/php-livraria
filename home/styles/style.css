@@ -1,0 +1,77 @@
+:root, html, * {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+body{
+  height: 100vh;
+  width: 100%;
+  background-color: #ffffff;
+  /*margin-top: 101px;*/
+  font-family: 'Roboto', sans-serif;
+}
+
+a:link, a:visited, a:active, a:hover{
+  text-decoration:none;
+  color: #000000;
+} 
+
+header {
+  background-color: #FCE01A;
+  border-bottom: 3px solid #000;
+}
+
+header .logo {
+  width: 10%;
+  height: 10%;
+  margin-right: 85%;
+}
+
+.books {
+  margin-top: 35px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.book-general {
+  width: 120px;
+  height: 180px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+
+  opacity: 1;
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+
+.book-general:hover {
+	opacity: .5;
+}
+
+.book-wrapper {
+  display: flex;
+  flex-direction: column;
+  /*justify-content: center;*/
+  align-items: center;
+}
+
+.price {
+  color: rgb(214, 34, 2);
+}
+
+.book-name {
+  margin-top: 10px;
+}
+
+header a {
+  font-weight: 700;
+  transition: opacity 0.5s;
+  animation: 0.8s linear infinite rotate;
+}
+
+header a:hover {
+  color: #ffffff;
+}
+
